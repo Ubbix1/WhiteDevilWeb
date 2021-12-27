@@ -27,13 +27,15 @@ a{
 .burger-menu{
     display: none;
     cursor: pointer;
+    
 }
 .line{
     width: 1.8rem;
     height: 0.25rem;
     margin: 0.2rem 0;
-    background: #fff;
+    background: rgb(30, 44, 167);
     border-radius: 5px;
+  
    
 }
 #logo{
