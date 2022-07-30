@@ -8,4 +8,8 @@ function navSlide(){
         navActive[0].classList.toggle("nav-items--active")
     }
  }
- 
+
+ function closeFunction(){
+    document.getElementById('demo').onclick=
+    document.getElementById("disclaimer").style.display = "none"
+ }
