@@ -1,3 +1,6 @@
+*{
+    text-decoration: none;
+}
 header{
     align-items: center;
     align-content: center;
@@ -6,11 +9,6 @@ header{
 
 
 .container{
-    width: 1400px;
-    height: 125vh;
-    background-color: grey;
-    position: fixed;
-    align-content: center;
 }
 
 .container .sec-container{
@@ -33,4 +31,15 @@ header{
 .container .sec-container button{
     padding: 4px 4px ;
     font-size: 16px;
+}
+
+@media only screen and (max-width:600px){
+    .sec-container{
+        width: max-content;
+        height: 100%;
+    }
+    .container .sec-container button{
+        font-size: normal;
+    }
+
 }
