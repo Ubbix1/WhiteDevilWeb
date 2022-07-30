@@ -1,0 +1,36 @@
+header{
+    align-items: center;
+    align-content: center;
+    text-align: center;
+}
+
+
+.container{
+    width: 1400px;
+    height: 125vh;
+    background-color: grey;
+    position: fixed;
+    align-content: center;
+}
+
+.container .sec-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: left;
+    background-color: #fff;
+}
+.container .sec-container label{
+    font-size: 24px;
+    display: flex;
+    flex-direction: row;
+}
+.container .sec-container input{
+    padding: 4px;
+    margin: 3rem;
+}
+.container .sec-container button{
+    padding: 4px 4px ;
+    font-size: 16px;
+}
