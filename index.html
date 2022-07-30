@@ -5,9 +5,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
-    <link 
-    rel="stylesheet"
-    href="//use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+    <link rel="stylesheet" href="//use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+    <link rel="logo" href="/images/Anonymous.jpg">
+    <script src="script.js"></script>
     <title>WHITE DEVIL </title>
 </head>
 <body>
@@ -24,7 +24,10 @@
             <a onclick="navClose()" href="https://Instagram.com/_ubbi_x_?utm_medium=copy_link">Instagram</a>
         </li>
         <li>
-            <a onclick="navClose()"  href="#footer">Footer </a>
+            <a onclick="navClose()"  href="#footer">Github </a>
+        </li>
+        <li>
+            <a onclick="navClose()"  href="/login/login.html">Sign Up </a>
         </li>
        </ul>
        <div class="burger-menu"   onclick="navSlide()">
@@ -36,7 +39,7 @@
     <main class="landing-screen">
         <h1>Welcome to white Devil world</h1>
         <p>This website made for hackerz</p>
-        <a href="https://Instagram.com/_ubbi_x_?utm_medium=copy_link">get-started 
+        <a class="get-started" href="#">Get-started 
             <i class="fas fa-play"></i>
         </a>
     </main>
@@ -83,16 +86,4 @@
        </footer>
 
 </body>
-<script>
-    function navSlide(){
-       var navItems =document.getElementById("nav-items")
-       navItems.classList.toggle("nav-items--active")
-    }
-    function navClose(){
-       var navActive = document.getElementsByClassName("nav-items--active")
-       if(navActive[0]){
-           navActive[0].classList.toggle("nav-items--active")
-       }
-    }
-</script>
 </html>
