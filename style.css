@@ -12,6 +12,20 @@ html{
 a{
     text-decoration: none;
 }
+.disclaimer{
+    background-color: #f2f2f2;
+        color: #000;
+        left: 0;
+        padding: 10px 10px 10px 10px;
+        position: fixed;
+        text-align: center;
+        bottom: 0;
+        width: 100%;
+        z-index: 15;
+        display: flex;
+        justify-content: space-around;
+}
+
 .header{    
         width: 100%;
         display: flex;
@@ -195,17 +209,37 @@ footer h1 {
     .header{
         padding: 0.1rem;
         height: 3.5rem;
-        justify-content: center;  
+        justify-content: space-around;  
       }
 }
 @media only screen and (max-width:490px){
+    .disclaimer{
+        flex-direction: column;
+        border-radius: 20px;
+        bottom: 1;
+        left: 1;
+        right: 1;
+        margin-top : 1rem;
+    }
+    .disclaimer .demo{
+        padding: 4px;
+        margin: 4px;
+        border: 1px solid orange;
+    }
+    .disclaimer button:nth-child(2){
+        background-color: orange;
+        color: white;
+        border: none
+        
+
+    }
     .cards-container .card{
         width: 10rem;
         margin: 0.5rem;
     }  
-.card-image{
+    .card-image{
          width: 3rem;
-}
+    }
     .card h6{
         margin: 0.5 0;
         font-size: 0.9rem;
@@ -217,6 +251,7 @@ footer h1 {
         font-size: 1.5rem;
         margin: 1.5rem 0;
     }
+
 }
 @keyframes fade {
     from{
