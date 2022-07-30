@@ -15,15 +15,18 @@ a{
 .header{    
         width: 100%;
         display: flex;
-        justify-content: space-between;
+        justify-content: space-around;
         height: 4.5rem;
         align-items: center;
-        background: transparent;
+        background: rgba(209, 209, 209,0.1);
         position: fixed;
         top: 0;
         left: 0;
         padding: 0.1rem;
 }
+
+
+
 .burger-menu{
     display: none;
     cursor: pointer;
@@ -69,13 +72,25 @@ a{
       justify-content: center;
       align-items: center;
 }
+.landing-screen h1{
+    text-shadow: 15px 6px 5px black;
+}
 .get-started {
-    background: rgb(6, 30, 247);
-    color: rgb(245, 21, 13);
+    background-color: red;
+    color:white;
     padding: 0.5rem 1rem;
     border-radius: 41px;
     margin-top: 1rem;
+    text-shadow: 2px 2px 4px black;
 }
+.get-started:hover{
+    background-color: #0e0eda;
+    color: red;
+    padding: 1rem;
+    transition: 0.4s;
+    text-shadow: 2px 2px 4px black;
+}
+
 .cards-container {
     width: 100%;
     display: flex;
@@ -120,7 +135,9 @@ footer h1 {
 }
 
 
-/*media started*/
+/*///////////////////////////////media started//////////////////////////*/
+
+
 @media only screen and (max-width:1100px) {
     .card p{
         font-size: 0.7rem;
