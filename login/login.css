@@ -1,5 +1,6 @@
 *{
     text-decoration: none;
+    background-color: #ddd;
 }
 header{
     align-items: center;
@@ -7,39 +8,49 @@ header{
     text-align: center;
 }
 
-
 .container{
-}
-
-.container .sec-container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: left;
+    margin: 1rem;
+}
+.container .box{
+   margin: 1rem;
+}
+.container .box:nth-child(2){
+    left: 1rem;
+    top: 0;
+}
+.container .box input{
+    padding: 10px;
+    border-radius: 10px;
+    border:none;
+    box-shadow: 2px 2px 8px black;
     background-color: #fff;
 }
-.container .sec-container label{
-    font-size: 24px;
-    display: flex;
-    flex-direction: row;
-}
-.container .sec-container input{
-    padding: 4px;
-    margin: 3rem;
-}
-.container .sec-container button{
-    padding: 4px 4px ;
+.container .box button{
+    padding:  6px 10px;
+    border: 2px solid orange;
+    width: 175px;
+    border-radius: 10px;
     font-size: 16px;
+    box-shadow: 2px 2px 8px orange;
+}
+.container .box button:hover{
+    background-color: orange;
+    color: black;
+    border: black;
+    box-shadow: 2px 2px 8px black;
+}
+.container .box button a{
+    color: black;
+}
+.container .box button a::after{
+    background: black;
+    
 }
 
 @media only screen and (max-width:600px){
-    .sec-container{
-        width: max-content;
-        height: 100%;
-    }
-    .container .sec-container button{
-        font-size: normal;
-    }
-
 }
