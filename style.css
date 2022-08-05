@@ -13,10 +13,10 @@ a{
     text-decoration: none;
 }
 .disclaimer{
-    background-color: #f2f2f2;
+        background-color: #f2f2f2;
         color: #000;
         left: 0;
-        padding: 10px 10px 10px 10px;
+        padding: 8px;
         position: fixed;
         text-align: center;
         bottom: 0;
@@ -24,8 +24,24 @@ a{
         z-index: 15;
         display: flex;
         justify-content: space-around;
+        font-size: small;
+        border-radius: 50px;
+
 }
 
+.disclaimer .btn button {
+    padding: 0 5px 0 5px;
+}
+.disclaimer .btn button:nth-child(1){
+    border: 2px solid orange;
+}
+
+.disclaimer .btn button:nth-child(2){
+    background-color: orange;
+    color: black;
+    border: 2px solid orange;
+
+}
 .header{    
         width: 100%;
         display: flex;
@@ -38,7 +54,9 @@ a{
         left: 0;
         padding: 0.1rem;
 }
-
+header .logo {
+    text-shadow: 5px 6px 5px grey;
+}
 
 
 .burger-menu{
@@ -47,14 +65,13 @@ a{
     
 }
 .line{
-    width: 1.8rem;
+    width: 1.5rem;
     height: 0.25rem;
     margin: 0.2rem 0;
-    background: rgb(30, 44, 167);
-    border-radius: 5px;
-  
-   
+    background: red;
+    border-radius: 5px;\
 }
+
 #logo{
     color: rgb(148, 140, 140);
 }
@@ -66,11 +83,22 @@ a{
     display: flex;
 }
 .nav-items li{
-    margin: 0rem 1rem;
+    margin: 0rem 0.5rem;
 }
-.nav-items li a{
+.nav-items li a {
      text-decoration: none;
      color: rgb(255, 255, 255);
+     margin: 0;
+     padding: 5px 10px 5px 10px;
+     text-shadow: 2px 0px 2px black;
+}
+.nav-items li a:hover{
+    background-color: grey;
+    color: black;
+    border-radius: 50px;
+    text-shadow: 2px 0px 2px white;
+
+
 }
 .landing-screen{
       background-image: url('images/white\ devil\ logo.jpg');
@@ -92,7 +120,7 @@ a{
 .get-started {
     background-color: red;
     color:white;
-    padding: 0.5rem 1rem;
+    padding: 0.5rem 0.5rem;
     border-radius: 41px;
     margin-top: 1rem;
     text-shadow: 2px 2px 4px black;
@@ -119,8 +147,13 @@ a{
     align-items: center;
     text-align: center;
     padding: 1rem;
-    box-shadow: 0px 0px 16 px rgba(15, 240, 45, 0.904);
     border-radius: 15px;
+    border: 2px ;
+    box-shadow: 2px 3px 9px black ;
+
+}
+.cards-container .card:hover{
+    background-color: #ddd;
 }
 .card h6{
     font-size: 1rem;
@@ -221,15 +254,21 @@ footer h1 {
         right: 1;
         margin-top : 1rem;
     }
-    .disclaimer .demo{
+    .disclaimer .btn{
+        display: grid;
+        grid-column: 1fr 1fr;
+    }
+
+    .disclaimer .btn .button{
         padding: 4px;
         margin: 4px;
         border: 1px solid orange;
     }
-    .disclaimer button:nth-child(2){
+    .disclaimer .btn button:nth-child(2){
         background-color: orange;
         color: white;
-        border: none
+        border: none;
+        margin-top: 5px;
         
 
     }
