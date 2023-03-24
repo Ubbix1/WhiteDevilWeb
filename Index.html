@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link 
+    rel="stylesheet"
+    href="//use.fontawesome.com/releases/v5.0.7/css/all.css"/>
+    <title>WHITE DEVIL </title>
+</head>
+<body>
+    <header class="header" id="header">
+        <h1 id="logo">white<span>devil</span></h1>
+       <ul class="nav-items" id="nav-items">
+           <li>
+               <a onclick="navClose()" href="#" onclick="navClose()">Home</a>    
+           </li>
+           <li>
+               <a onclick="navClose()" href="#card-section">Card</a>
+           </li>
+           <li>
+            <a onclick="navClose()" href="https://Instagram.com/_ubbi_x_?utm_medium=copy_link">Instagram</a>
+        </li>
+        <li>
+            <a onclick="navClose()"  href="#footer">Footer </a>
+        </li>
+       </ul>
+       <div class="burger-menu"   onclick="navSlide()">
+           <div class="line"></div>
+           <div class="line"></div>
+           <div class="line"></div>
+       </div>
+    </header>
+    <main class="landing-screen">
+        <h1>Welcome to white Devil world</h1>
+        <p>This website made for hackerz</p>
+        <a href="https://Instagram.com/_ubbi_x_?utm_medium=copy_link">get-started 
+            <i class="fas fa-play"></i>
+        </a>
+    </main>
+    <section id="card-section">
+        <h1 class="card-section-header">The Famous Hackerz</h1>
+        <div class="cards-container">
+            <div class="card">
+                <img class="card-image" src="images/Anonymous.jpg" alt="">
+                <h6>Anonymous</h6>
+                <p> An emblem that is commonly associated with Anonymous. The "man without a head" represents anonymity and leaderless organization Individuals appearing in public as Anonymous, wearing Guy Fawkes masks.
+                    Formation:2003
+                    Type:
+                    Multiple-use name/avatar
+                    Virtual community
+                    Voluntary association
+                    Purpose	:
+                    Anti-cyber-surveillance
+                    Anti-cyber-censorship
+                    Internet activism
+                    Internet vigilantism
+                    Membership	Decentralized affinity group </p>
+            </div>
+            <div class="card">
+                <img class="card-image" src="images/Jonathan james.jpg" alt="">
+                <h6>Jonathan james</h6>
+                <p>Jonathan Joseph James (December 12, 1983 – May 18, 2008) was an American hacker (a gray hat ethical hacker) who was the first juvenile incarcerated for cybercrime in the United States. The South Florida native was 15 years old at the time of the first offense and 16 years old on the date of his sentencing. He died at his Pinecrest, Florida home on May 18, 2008, of a self-inflicted gunshot wound. </p>
+            </div>
+            <div class="card">
+                <img class="card-image" src="images/Kevin Mitnick.jpg" alt="">
+                <h6>Kevin Mitnick</h6>
+                <p>Mitnick was born in Van Nuys, California, on August 6, 1963.[12][self-published source?] He grew up in Los Angeles and attended James Monroe High School in Los Angeles, California,[13] during which time he became an amateur radio operator.[14] He was later enrolled at Los Angeles Pierce College and USC.[13] For a time, he worked as a receptionist for Stephen S. Wise Temple </p>
+            </div>
+            <div class="card">
+                <img class="card-image" src="images/Hamza Bendelladj.jpg" alt="">
+                <h6>Hamza Bendelladj</h6>
+                <p> Hamza Bendelladj is a legend in Algeria, a country which is also going through turbulent times politically. Hamza who operated with the code name is ” BX1 ” 1 and was dubbed the ” smiling Hacker “, born in 1988, from Tizi-Ouzou in Algeria.
+
+                </p>
+            </div>
+        </div>
+    </section>
+       <footer id="footer">
+           <h1>Thank You!</h1>
+       </footer>
+
+</body>
+<script>
+    function navSlide(){
+       var navItems =document.getElementById("nav-items")
+       navItems.classList.toggle("nav-items--active")
+    }
+    function navClose(){
+       var navActive = document.getElementsByClassName("nav-items--active")
+       if(navActive[0]){
+           navActive[0].classList.toggle("nav-items--active")
+       }
+    }
+</script>
+</html>
